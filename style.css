@@ -1,0 +1,57 @@
+.light-theme {
+    --background-color: hsl(0, 0%, 98%);
+    --text-color: hsl(200, 15%, 8%);
+    --element-color: hsl(0, 0%, 100%);
+}
+
+.dark-theme {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: hsl(0, 0%, 100%);
+    --element-color: hsl(209, 23%, 22%);
+    --placeholder-color : #dae3ea;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+
+button, input, select, .grid-item {
+    font-family: 'Nunito Sans', sans-serif !important;
+    background-color: var(--element-color) !important;
+    color: var(--text-color) !important;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.icon {
+    color: var(--text-color);
+}
+
+select option {
+    border: none;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
