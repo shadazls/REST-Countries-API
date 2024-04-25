@@ -37,19 +37,28 @@
             <button class="rounded-md w-40 h-12 shadow-lg hover:scale-110 duration-300">Back</button>
         </div>
 
-        <div id="country-details-container" class="flex" style="height: 60vh;">
-            <!-- Le flag est ajouté ici -->
-            <div id="country-details-informations" class="flex flex-col">
-
+        <div id="country-details-container" class="flex flex-row" style="height: 60vh;">
+            <div class="country-flag-container w-1/2">
+                <!-- Le flag est ajouté ici -->
+            </div>
+            
+            <div id="country-details-informations" class="flex flex-col ml-32 mt-10 gap-2">
+                <!-- <p class="text text-4xl font-bold">Belgium</p>
+                <p class="text text-md mt-5">Native Name:</p>
+                <p class="text text-md">Population:</p>
+                <p class="text text-md">Region:</p>
+                <p class="text text-md">Sub Region:</p>
+                <p class="text text-md">Capital:</p>
+                <p class="text text-md">Top Level Domain:</p>
+                <p class="text text-md">Currencies:</p>
+                <p class="text text-md">Languages:</p> -->
             </div>
         </div>
-
 
     </main>
 
     <script src="scripts/back-to-index.js"></script>
     <script src="scripts/theme-switch.js"></script>
-    <script src="search-countries.js"></script>
     <script src="scripts/display-details.js"></script>
 </body>
 </html>

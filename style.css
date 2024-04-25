@@ -17,6 +17,10 @@ body {
     font-size: 14px;
 }
 
+.text {
+    color: var(--text-color);
+}
+
 header {
     background-color: var(--element-color);
     color: var(--text-color);
